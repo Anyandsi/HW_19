@@ -1,9 +1,9 @@
 public class Lamp extends ArtificialLight{
-    public int getQuantity() {
+    public static int getQuantity() {
         return counter;
     }
 
-    private int counter = 0;
+    public static int counter = 1;
     public Lamp(String sourceName, int brightnessLevel, boolean isTurnedOn, int counter) {
         super(sourceName, 100, isTurnedOn);
         this.counter = counter;
